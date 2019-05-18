@@ -1,0 +1,119 @@
+body {
+  background-color: pink;
+  font-family: monospace;
+  color: white;
+  text-align: center;
+}
+
+button {
+  background-color: palevioletred;
+  border: solid 1px pink;
+  border-radius: 20px;
+  color: white;
+}
+
+button:disabled {
+  color: whitesmoke;
+  background-color: darkmagenta;
+}
+
+.listBoard {
+  border: solid 0.5px pink;
+  padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 20px;
+}
+
+.delete {
+  margin-left: 20px;
+}
+
+.todotext:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.line {
+  border: solid 0.5px pink;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background: linear-gradient(
+    -20deg,
+    pink,
+    rgba(233, 139, 173, 0.952),
+    rgb(240, 124, 161)
+  );
+  padding: 20px;
+  -moz-animation: Gradient 1s ease infinite;
+  animation: Gradient 1s ease infinite;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav ul {
+  background-color: white;
+}
+
+.nav li {
+  list-style: none;
+  margin-right: 20px;
+  padding: 5px;
+  border: 0.1px solid white;
+}
+
+.nav li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+.submit {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit input {
+  width: 50%;
+}
+
+.submit button {
+  margin-left: 10px;
+}
